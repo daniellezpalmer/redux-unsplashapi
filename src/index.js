@@ -5,6 +5,11 @@ import reduxThunk from 'redux-thunk';
 import reducer from './reducer';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
+const initialState = {
+  filter:"all",
+  picData: PicData(),
+}
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
